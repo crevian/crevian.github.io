@@ -22,10 +22,10 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SKILLS</a></li>
-        <li><a href="#">LANGUAGES</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#" onclick="displayHome()">HOME</a></li>
+        <li><a href="#" onclick="displaySkills()">SKILLS</a></li>
+        <li><a href="#" onclick="displayLanguages()">LANGUAGES</a></li>
+        <li><a href="#" onclick="displayProjects()">PROJECTS</a></li>
       </ul>
     </header>
 
@@ -53,18 +53,23 @@
 
         <section>Menu 2</section>
       </div>
-      <div id="main">
-        <div class="page">
-          <p>Welcome to my first CV</p>
-          <div>
-            <h2>Skills</h2>
-            <ul>
-              <li class="favourite">HTML</li>
-              <li>CSS</li>
-              <li class="favourite">JS</li>
-            </ul>
-          </div>
 
+      <div id="main">
+        <div id="home" class="page" style="display: block">
+          <h2>Home</h2>
+          <p>Welcome to my first CV</p>
+        </div>
+
+        <div id="skills" class="page">
+          <h2>Skills</h2>
+          <ul>
+            <li class="favourite">HTML</li>
+            <li>CSS</li>
+            <li class="favourite">JS</li>
+          </ul>
+        </div>
+
+        <div id="languages" class="page">
           <h2>Languages</h2>
           <table>
             <tr>
@@ -77,6 +82,10 @@
             </tr>
           </table>
         </div>
+
+        <div id="projects" class="page">
+          <h2>Projects</h2>
+        </div>
       </div>
     </section>
 
@@ -88,6 +97,6 @@
       >
     </footer>
 
-    <script src="examples.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
