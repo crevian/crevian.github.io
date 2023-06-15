@@ -83,6 +83,11 @@ h2 {
   color: green;
 }
 
+#skills li span {
+  font-weight: 200;
+  color: grey;
+}
+
 #top-menu-bar {
   margin: 0;
   text-align: center;
