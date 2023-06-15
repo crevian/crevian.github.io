@@ -51,8 +51,8 @@ function showSkillsList() {
   var ul = $("#skills ul");
 
   var skillsHTML = skills.map(function (skill) {
-    //<li class="favourite">HTML</li>
-    return `<li>${skill.name}</li>`;
+    var className = skill.favorite ? "favorite" : "";
+    return `<li class = "${className}">${skill.name}</li>`;
   });
 
   ul.innerHTML = skillsHTML.join("");
