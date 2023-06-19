@@ -10,3 +10,17 @@ var person = {
   age: 38,
   employed: true,
 };
+
+function h() {
+  return "h";
+}
+
+const f = function myFn() {
+  return "f";
+};
+
+const a = () => {
+  return "a";
+};
+
+console.info(f(), a());
