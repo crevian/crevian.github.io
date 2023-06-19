@@ -43,7 +43,9 @@ function clickOnMenu(e) {
 
 function showSkillsList(skills) {
   var ul = $("#skills ul");
-  console.info(skills);
+
+  skills.sort((a, b) => b.endorcements - a.endorcements);
+
   var skillsHTML = skills.map((skill) => {
     var className = skill.favorite ? "favorite" : "";
     return `<li class = "${className}">${skill.name} <span>- ${skill.endorcements} </span></li>`;
