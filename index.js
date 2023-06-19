@@ -52,10 +52,9 @@ function showSkillsList(skills) {
 }
 
 function getSkillsRequest() {
-  fetch("skills.json").then((r) => {
-    r.json().then(showSkillsList);
-  });
-  console.warn("todo get skills");
+  fetch("skills.json")
+    .then((r) => r.json())
+    .then(showSkillsList);
 }
 
 displayPage(activePage);
