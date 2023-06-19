@@ -146,4 +146,10 @@ footer a {
   transition: 0.5s;
 }
 
+footer a.active,
+footer a:hover {
+  color: #334455;
+  background: #fff;
+}
+
 /* ToDo css for table */
