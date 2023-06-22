@@ -59,6 +59,10 @@ function getSkillsRequest() {
     .then(showSkillsList);
 }
 
+function initEvents() {
+  $("#top-menu-bar").addEventListener("click", clickOnMenu);
+}
+
 displayPage(activePage);
-$("#top-menu-bar").addEventListener("click", clickOnMenu);
+initEvents();
 getSkillsRequest();
